@@ -1,1 +1,9 @@
-site_name: My Docs
+site_name: neXa Documentation
+site_description: Industrial automation framework for Beckhoff TwinCAT 3
+site_url: https://tcnexa.github.io/nexa-docs/
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md

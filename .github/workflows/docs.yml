@@ -7,6 +7,10 @@ on:
 
   workflow_dispatch:
 
+  repository_dispatch:
+    types:
+      - organization-readme-updated
+
 permissions:
   contents: write
 
@@ -15,8 +19,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout documentation repository
         uses: actions/checkout@v4
+
+      - name: Checkout neXa organization profile
+        uses: actions/checkout@v4
+        with:
+          repository: TcNexa/.github
+          path: organization
 
       - name: Configure Git credentials
         run: |

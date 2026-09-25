@@ -1,9 +1,71 @@
 site_name: neXa Documentation
 site_description: Industrial automation framework for Beckhoff TwinCAT 3
+site_author: ATI - Automation Technology Integrator
 site_url: https://tcnexa.github.io/nexa-docs/
+
+repo_url: https://github.com/TcNexa/nexa-docs
+repo_name: TcNexa/nexa-docs
 
 theme:
   name: material
 
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
 nav:
   - Home: index.md
+
+  - Getting Started:
+      - Overview: getting-started/index.md
+
+  - Framework:
+      - Overview: framework/index.md
+
+  - Libraries:
+      - Overview: libraries/index.md
+      - TcCylinder:
+          - Overview: libraries/tc-cylinder/index.md
+
+  - Reference:
+      - Overview: reference/index.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+extra_css:
+  - stylesheets/extra.css

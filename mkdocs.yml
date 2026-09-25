@@ -51,6 +51,9 @@ nav:
 
   - Libraries:
       - Overview: libraries/index.md
+      - TcDummy:
+          - Overview: libraries/tcdummy/index.md
+          - Examples: libraries/tcdummy/examples.md
       - TcCylinder:
           - Overview: libraries/tc-cylinder/index.md
 

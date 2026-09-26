@@ -49,7 +49,7 @@ nav:
   - Framework:
       - Overview: framework/index.md
 
-  - Libraries:
+  - TwinCAT 3:
       - Overview: libraries/index.md
       - TcDummy:
           - Overview: libraries/tcdummy/index.md
